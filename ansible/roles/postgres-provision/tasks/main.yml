@@ -19,7 +19,7 @@
     enabled: "{{ postgresql_service_enabled }}"
 
 # Configure PostgreSQL.
-- include: users.yml
+#- include: users.yml
 - include: databases.yml
 - name: Ensure PostgreSQL is started and enabled on boot.
   service:
